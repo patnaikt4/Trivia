@@ -15,10 +15,9 @@ Just in case the hosted website does not work, below are instructions for runnin
 1. **Cloning the Repository**:
    - Open a terminal and run these commands:
  	```bash
- 	git clone https://github.com/patnaikt4/Trivia.git
-  cd Trivia
- 	```
-
+   git clone https://github.com/patnaikt4/Trivia.git
+   cd Trivia
+  
 2. **Install Dependencies**:
    - Install required libraries:
  	```bash
