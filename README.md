@@ -11,7 +11,7 @@ Just in case the hosted website does not work, below are instructions for runnin
 - Python 3.6 or newer
 - Virtual environment (optiona)
 
-## Setup Instructions 
+## Setup Instructions (If the hosted website does not work) 
 1. **Cloning the Repository**:
    - Open a terminal and run these commands:
  	```bash
