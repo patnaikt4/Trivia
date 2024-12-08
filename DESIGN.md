@@ -15,7 +15,7 @@ Routes
 
 
 
-App.py
+## App.py
 
 First I had to decide what python library I would use to handle interacting with my database. Because I didn’t want to work with raw SQL queries and wanted to relate databases together (Users and Score), I knew that I wanted to use a library which had Object Relational Mapping capabilities. Therefore, I decided to use SQLAlchemy
 
@@ -27,11 +27,11 @@ If the user is still logged in from previous sessions, the program starts by tra
 
 If you request questions too quickly from the API’s, the API itself will throw an error (429). Therefore, I have implemented 3 retries into the function, which 
 
-Index.html
+## Index.html
 
 So this page
 
-Analytics.html
+## Analytics.html
 
 I wanted to make the data visualizations interactive with the user, so instead of creating static visualizations through Python libraries such as Matplot or Seaborn, I used Chart.js, which is a javascript library. 
 
