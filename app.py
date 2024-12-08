@@ -234,7 +234,7 @@ def analytics():
             "average_score": average_score,
         })
 
-        # Placeholder for second graph
+        # Second graph
         performance_data[difficulty] = [score.score for score in scores] + [None] * (max_quizzes - total_quizzes)
 
     # Debugging code used while in development
