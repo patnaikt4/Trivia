@@ -1,3 +1,4 @@
+## Ideation
 
 We begin by creating a database for Users (containing their id, username, password, and a relationship with Scores) and a database for Scores (containing the id, score, total, difficulty, and user_id). Then, we have defined the URL’s for the easy, medium, and hard questions.
 
