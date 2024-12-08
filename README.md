@@ -1,6 +1,8 @@
 # Trivia Quiz App
- 
 Video Implementation: https://www.youtube.com/watch?v=nTC91s9u_IQ
+
+## Description
+This is a Flask-based web application that allows user to register, login, and take trivia quizzes at different levels of difficulty (easy, medium, and hard). The corresponding scores are then stored and data visualizations are developed on the analytics dashboard.
 
 ## Hosted Website: 
 https://trivia-1-rpqp.onrender.com/ (Note that I'm using the free plan, which has this warning: Your free instance will spin down with inactivity, which can delay requests by 50 seconds or more.)
