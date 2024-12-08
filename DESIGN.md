@@ -20,7 +20,7 @@ Things Learned
 
 First I had to decide what python library I would use to handle interacting with my database. Because I didn’t want to work with raw SQL queries and wanted to relate databases together (Users and Score), I knew that I wanted to use a library which had Object Relational Mapping capabilities. Therefore, I decided to use SQLAlchemy. To encode and decode passwords, I used functions in the werkzeug.security library.
 
-The fetch_questions function takes inputs of difficulty. It reads in the data and properly formatted it in terms of its id, question, correct answer, and incorrect answers and stores it. This is reference in later functions to determine the score of the user.
+The fetch_questions function takes inputs of difficulty. It reads in the data and properly formatted it in terms of its id, question, correct answer, and incorrect answers and stores it. This is reference in later functions to determine the score of the user. I decided to use an API, which stored all the trivia questions based on difficulty. This function requests the questions from said API in order to use them for our program
 
 
 ## Index.html and Index Function in App.py
