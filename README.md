@@ -1,5 +1,6 @@
 # Trivia Quiz App
 Video Implementation: https://www.youtube.com/watch?v=nTC91s9u_IQ
+Github Repository Link: https://github.com/patnaikt4/Trivia
 
 ## Description
 This is a Flask-based web application that allows user to register, login, and take trivia quizzes at different levels of difficulty (easy, medium, and hard). The corresponding scores are then stored and data visualizations are developed on the analytics dashboard.
