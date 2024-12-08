@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h1 class="display-4">Your Score</h1>
+                    <p class="lead">You scored <strong>{{ score }}</strong> out of <strong>{{ total }}</strong>.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="/" class="btn btn-primary mx-2">Take the Quiz Again</a>
+                    <a href="/logout" class="btn btn-danger mx-2">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

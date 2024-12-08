@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="text-center">Analytics Dashboard</h1>
+    
+
+    <!-- Existing Statistics -->
+    <div class="row mt-5">
+        {% for difficulty, stat in stats.items() %}
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{ difficulty.capitalize() }} Quizzes</h5>
+                        <p class="card-text">Total Quizzes: {{ stat.total_quizzes }}</p>
+                        <p class="card-text">Total Score: {{ stat.total_score }}</p>
+                        <p class="card-text">Average Score: {{ stat.average_score|round(2) }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+    <!-- Visualization Section -->
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h3 class="text-center">Performance by Difficulty</h3>
+            <canvas id="difficultyChart"></canvas>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h3 class="text-center">Performance Over Time</h3>
+            <canvas id="performanceChart"></canvas>
+        </div>
+    </div>
+    
+
+    <!-- Back to Quiz Button -->
+    <div class="text-center mt-4">
+        <a href="/" class="btn btn-primary">Back to Quiz</a>
+    </div>
+
+    <!-- Loading in Chart.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script id="scoresData" type="application/json">
+        {{ scores_data|tojson }}
+    </script>
+    <script id="performanceData" type="application/json">
+        {{ performance_data|tojson }}
+    </script>
+    <script id="maxQuizzes" type="application/json">
+        {{ max_quizzes }}
+    </script>
+    <script src="{{ url_for('static', filename='js/analytics.js') }}"></script>
+
+    
+{% endblock %}
