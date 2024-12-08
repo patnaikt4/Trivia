@@ -34,9 +34,14 @@ In order to handle GET requests, we get the difficulty, and fetch the questions.
 
 ## Analytics.html, Analytics.js, and Analytics Function in App.py
 
+In the analytics function in app.py, I create a dictionary of stats based on each difficulty, which holds the total number of quizzes, total score, and average score for each level of difficulty. I also created a performance_data that has a key with the difficulty and the values are the scores. This is used in the line chart for the second graph.
+
 I wanted to make the data visualizations interactive with the user, so instead of creating static visualizations through Python libraries such as Matplot or Seaborn, I used Chart.js, which is a javascript library. 
 
+In the html file, I render the existing statistics with Bootstrap to keep everything in containers. I then use the Canvas tag utillized by Chart.js to create and render the data visualizations.
+
 For creating the difficulty chart (the first one that renders), I gathered statistics by creating labels for the graph and computing statistics from the scoresData. Then, a bar chart is created with that information. For creating the performance chart (the second one that renders), I have done virtually the same method andline chart instead.
+
 
 ## Base.html
 
