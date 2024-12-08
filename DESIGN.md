@@ -3,17 +3,13 @@
 We begin by creating a database for Users (containing their id, username, password, and a relationship with Scores) and a database for Scores (containing the id, score, total, difficulty, and user_id). Then, we have defined the URL’s for the easy, medium, and hard questions.
 
 Things Learned
-- Python Libraries and Frameworks
+- Python Libraries and Frameworks (Flask, Flask-SQLAlchemy, Flask-Migrate)
 - Database
-- APIs
-- HTML and Templating
-- CSS and JavaScript
-- Concepts
-- Development Tools
-- Routes
-
-
-
+- APIs (Trivia Database API)
+- HTML and Templating (Jinga2)
+- CSS and JavaScript (Bootstrap and Chart.js)
+- Development Tools (VSCode and Github)
+- Routing
 
 
 ## App.py Overview
