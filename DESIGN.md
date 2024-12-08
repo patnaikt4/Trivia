@@ -1,6 +1,10 @@
 ## Ideation
 
-We begin by creating a database for Users (containing their id, username, password, and a relationship with Scores) and a database for Scores (containing the id, score, total, difficulty, and user_id). Then, we have defined the URL’s for the easy, medium, and hard questions.
+The idea was to create a Trivia based quiz application that could track user statistics, hopefully leading to increased training and improvement over time. Hence why I wanted to create an analytical dashboard for this project -  as a way to keep users motivated and see their progress.
+
+Below, I broke down sections of my code, explaining what each section is meant to accomplish.
+
+We begin by creating a database for Users (containing their id, username, password, and a relationship with Scores) and a database for Scores (containing the id, score, total, difficulty, and user_id). Then, we have defined the URL’s for the easy, medium, and hard questions originating from the API.
 
 Things Learned
 - Python Libraries and Frameworks (Flask, Flask-SQLAlchemy, Flask-Migrate)
