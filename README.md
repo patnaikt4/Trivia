@@ -16,6 +16,9 @@ Just in case the hosted website does not work, below are instructions for runnin
 - Virtual environment (optiona)
 
 ## Setup Instructions (If the hosted website does not work) 
+
+Note: If you are on Windows, you **may** have to add "py -m" before some commands to have it work correctly.
+
 1. **Cloning the Repository**:
    - Open a terminal and run these commands:
  	```bash
